@@ -1,0 +1,55 @@
+.res-home {
+    overflow-x: hidden;
+}
+
+h1 {
+    color: rebeccapurple;
+}
+
+h3 {
+    color: purple;
+}
+
+.resume {
+    width: 100vw;
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.resume .resume-card {
+    width: 80%;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px whitesmoke;
+}
+
+.resume .card-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+@media screen and (max-width: 568px) {
+    .resume {
+        width: 100vw;
+        margin-left: -5em;
+        padding-top: 5em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resume .card-Container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .education .card-Container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+    }
+}

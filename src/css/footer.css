@@ -1,0 +1,9 @@
+.sign-off {
+    width: 100%;
+    background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  /* position: fixed; */
+}

@@ -1,0 +1,110 @@
+.portfolio-section {
+    width: 100%;
+    height: 100vh;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.portfolio-section h1 {
+    color: purple;
+}
+
+.portfolio {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.portContainer {
+    text-decoration: none;
+    width: 20%;
+    height: fit-content;
+}
+
+.portContainer .portMessage {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.portContainer .portMessage h3 {
+    color: palevioletred;
+}
+
+.portContainer .portImage {
+    width: 100%;
+    height: 10rem;
+}
+
+.portContainer .portImage img {
+    width: 100%;
+}
+
+.portContainer button {
+        width: 25%;
+        height: 2rem;
+        background-color: transparent;
+        color: palevioletred;
+        border: 2px solid palevioletred;
+        padding: 2px;
+        cursor: pointer;
+        font-weight: bold;
+}
+
+.portContainer button:hover {
+    background-color: palevioletred;
+    color: #fff;
+    transition: .7s ease-in;
+}
+
+@media screen and (max-width: 576px) {
+    .portfolio-section {
+        padding-top: 3em !important;
+        height: fit-content;
+    }
+
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .portContainer {
+        width: 100%;
+    }
+
+    .portContainer .portImage {
+        height: auto;
+    }
+
+    .portContainer .portImage img {
+        height: 100%;
+    }
+
+    .portContainer button {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-section {
+        height: fit-content;
+    }
+    .portfolio {
+        flex-direction: column;
+        gap: 5em;
+        padding: 0;
+    }
+
+    .portContainer {
+        width: 100%;
+        height: 60vh;
+    }
+}

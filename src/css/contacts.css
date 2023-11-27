@@ -1,0 +1,122 @@
+.contacts {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-holder h4 {
+    margin-right: 2em;
+}
+
+.social-links {
+    width: 100%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: purple;
+}
+
+.social-links p {
+  cursor: pointer;
+}
+
+
+.contacts p {
+  margin: 0.5rem;
+  display: flex;
+  text-align: center;
+  gap: 1.2em;
+}
+
+.contacts .review {
+  width: 50%;
+}
+
+.review form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.review input {
+  width: 100%;
+  margin: 1.3em auto;
+  padding: 2em;
+  border: 2px solid palevioletred;
+  color: purple;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.review label {
+  display: flex;
+  flex-direction: column;
+}
+
+.review .email-input {
+  width: 50%;
+  margin: 0;
+  padding: .5em;
+  border: 2px solid palevioletred;
+  color: purple;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.review button {
+  width: 25%;
+  height: 2rem;
+  background-color: palevioletred;
+  color: #fff;
+  border: 2px solid palevioletred;
+  padding: 2px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.review button:hover {
+  background-color: transparent;
+  color: palevioletred;
+  transition: 0.7s ease-in;
+}
+
+.socials {
+  color: purple;
+}
+
+@media screen and (max-width: 576px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .review {
+    width: 100%;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .review .email-input {
+    width: 100%;
+  }
+
+  .social-holder {
+    display: flex;
+    flex-direction: column;
+  }
+}
