@@ -1,6 +1,6 @@
 import connect from "./images/connectme-1.png"
 // import connecta from "./images/connectme-2.png"
-import revision from "./images/smartrev.png"
+// import revision from "./images/smartrev.png"
 // import revisiona from "./images/smartrev-2.png"
 import leads from "./images/leads.png"
 import neko from "./images/neko-screenshot.png"

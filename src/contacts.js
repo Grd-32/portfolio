@@ -1,6 +1,5 @@
 import "./css/contacts.css";
 import {
-  FaAddressBook,
   FaEnvelope,
   FaGithub,
   FaLinkedin,
