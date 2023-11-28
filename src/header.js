@@ -7,7 +7,7 @@ export default function Header() {
 
   const [openMenu, setOpenMenu] = useState(false)
   const toggleMenu = () => {
-    setOpenMenu(openMenu)
+    setOpenMenu(!openMenu)
   }
 
   return (
@@ -17,7 +17,7 @@ export default function Header() {
       </div>
       <div className="menuBar" onClick={toggleMenu}><FaBars /></div>
       
-      {!openMenu && (<ul className="navbar">
+      {openMenu && (<ul className="navbar">
         <li>
           <HashLink smooth to={"#home"}>Home</HashLink>
         </li>
