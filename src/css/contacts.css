@@ -41,40 +41,30 @@
 
 .contacts .review {
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .review form {
+  width: 80%;
+  padding: 3em;
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
 
-.review input {
+.review input, .review textarea {
   width: 100%;
-  margin: 1.3em auto;
-  padding: 2em;
-  border: 2px solid palevioletred;
-  color: purple;
+  margin: auto;
+  padding: 0.5em;
+  /* border: 2px solid palevioletred; */
+  /* color: purple; */
   font-size: 1rem;
   border-radius: 5px;
 }
 
-.review label {
-  display: flex;
-  flex-direction: column;
-}
 
-.review .email-input {
-  width: 50%;
-  margin: 0;
-  padding: .5em;
-  border: 2px solid palevioletred;
-  color: purple;
-  font-size: 1rem;
-  border-radius: 5px;
-}
-
-.review button {
+.review .submit-btn {
   width: 25%;
   height: 2rem;
   background-color: palevioletred;

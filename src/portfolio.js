@@ -1,6 +1,4 @@
 import "./css/portfolio.css"
-import Footer from "./footer"
-import Header from "./header"
 import {portfolio} from "./portcontent"
 
 export default function Portfolio () {
@@ -20,12 +18,10 @@ export default function Portfolio () {
 
     return (
         <>
-        <Header />
-        <div className="portfolio-section">
+        <div className="portfolio-section" id="portfolio">
             <h1>My projects</h1>
             <ul className="portfolio">{myPortfolio}</ul>
         </div>
-        <Footer />
         </>
     )
 }

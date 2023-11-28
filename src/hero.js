@@ -1,13 +1,16 @@
 import "./css/hero.css";
 import Header from "./header";
 import Footer from "./footer";
+import About from "./about";
+import Contacts from "./contacts";
 import { Link } from "react-router-dom";
 import three from "./images/19362653.jpg";
+import Portfolio from "./portfolio";
 export default function Hero() {
   return (
     <>
     <Header />
-    <div className="hero">
+    <div className="hero" id="home">
          <div className="heroImage">
           <img src={three} alt="" />
         </div> 
@@ -24,6 +27,9 @@ export default function Hero() {
             </li>
         </div>
     </div>
+    <About />
+    <Portfolio />
+    <Contacts />
     <Footer />
     </>
   );

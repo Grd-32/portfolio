@@ -1,13 +1,13 @@
 import { FaBars } from "react-icons/fa";
 import "./css/header.css";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { useState }  from "react";
 
 export default function Header() {
 
-  const [openMenu, setOpenMenu] = useState(true)
+  const [openMenu, setOpenMenu] = useState(false)
   const toggleMenu = () => {
-    setOpenMenu(!openMenu)
+    setOpenMenu(openMenu)
   }
 
   return (
@@ -17,18 +17,18 @@ export default function Header() {
       </div>
       <div className="menuBar" onClick={toggleMenu}><FaBars /></div>
       
-      {openMenu && (<ul className="navbar">
+      {!openMenu && (<ul className="navbar">
         <li>
-          <Link to={"/"}>Home</Link>
+          <HashLink smooth to={"#home"}>Home</HashLink>
         </li>
         <li>
-          <Link to={"/about"}>About</Link>
+          <HashLink smooth to={"#about"}>About</HashLink>
         </li>
         <li>
-          <Link to={"/projects"}>Projects</Link>
+          <HashLink smooth to={"#portfolio"}>Projects</HashLink>
         </li>
         <li>
-          <Link to={"/contacts"}>Contacts</Link>
+          <HashLink smooth to={"#contacts"}>Contacts</HashLink>
         </li>
       </ul>)}
       

@@ -1,14 +1,11 @@
 import "./css/about.css";
 import one from "./images/one.jpg";
 import two from "./images/api.jpg";
-import Header from "./header";
-import Footer from "./footer";
 
 export default function About() {
   return (
     <>
-    <Header />
-    <div className="about">
+    <div className="about" id="about">
       <div className="about-image">
         <img className="frontend" src={one} alt="front-end" />
         <img className="backend" src={two} alt="back-end" />
@@ -38,7 +35,6 @@ export default function About() {
         </p>
       </div>
     </div>
-    <Footer />
     </>
   );
 }
