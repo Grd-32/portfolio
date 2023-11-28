@@ -1,6 +1,6 @@
 .contacts {
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,7 +40,7 @@
 }
 
 .contacts .review {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
 }
@@ -88,17 +88,23 @@
 
 @media screen and (max-width: 576px) {
   .contacts {
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
   .review {
-    width: 100%;
+    width: 80%;
     display: flex;
     float: left;
     justify-content: center;
     align-items: center;
+  }
+
+  .review form {
+    width: 90%;
+    padding: 2em;
   }
 
   .review .email-input {

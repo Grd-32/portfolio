@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./css/resume.css";
-import Header from "./header";
+import Header from "./headerSec";
 import Footer from "./footer";
 
 export default function Resume () {
